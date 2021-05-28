@@ -15,7 +15,7 @@ namespace BC_SFTP_LOG
         static void Main(string[] args)
         {
             string status = "Success";
-            var inputDirectory = new DirectoryInfo(@"E:\Interface\outbound\Log");
+            var inputDirectory = new DirectoryInfo(@"E:\Interface\outbound\Log1");
             var myFile = inputDirectory.GetFiles().OrderByDescending(f => f.LastWriteTime).First();
             string Fpath = @"E:\Interface\outbound\Log\" + myFile.ToString();
             string mailBody = "";
